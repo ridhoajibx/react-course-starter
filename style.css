@@ -25,7 +25,7 @@ body {
   align-content: center;
   align-items: center;
   background-color: #2d2d2d;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 body,
@@ -38,19 +38,18 @@ html {
 
 .container {
   width: 600px;
-  height: 800px;
+  height: 700px;
   background-color: #f2eecb;
   border-radius: 4px;
   padding: 32px;
 }
 
 .frame {
-  border: 1px solid var(--main-black-color);
+  border: 1px solid #484848;
   height: 100%;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .header {
@@ -61,11 +60,8 @@ html {
 .header-title {
   flex: 1;
   text-align: center;
-
-  color: var(--main-black-color);
   font-size: 4rem;
   font-family: "Satisfy", sans-serif;
-  text-transform: lowercase;
 }
 
 .header-btn {
@@ -78,14 +74,6 @@ html {
   background: unset;
   border: unset;
   outline: unset;
-}
-
-.header-btn.main-red-color:active {
-  text-shadow: 1px 1px 2px var(--main-red-color);
-}
-
-.header-btn.main-black-color:active {
-  text-shadow: 1px 1px 2px var(--main-black-color);
 }
 
 .add {
@@ -125,7 +113,7 @@ html {
   outline: unset;
 }
 
-.add-btn.main-black-color:active {
+.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
 }
 
@@ -142,9 +130,14 @@ html {
 
   min-height: 34px;
   margin: 16px 0 0;
-
   font-family: "Satisfy", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
 
   border-bottom: 1px solid var(--main-red-color);
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
